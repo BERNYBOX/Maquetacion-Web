@@ -178,6 +178,23 @@ main {
     margin-top: 190px;
 }
 
+.seccion-inicio {
+    background: linear-gradient(rgba(228, 35, 19, 0.85), rgba(196, 29, 16, 0.85)), url('https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 5%;
+}
+
+.contenido-inicio h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contenido-inicio p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .seccion-servicios,
 .seccion-noticias {
@@ -274,7 +291,7 @@ main {
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
-    border-radius: 50%;
+    filter: brightness(0) invert(1);
 }
 
 .seccion-institucion h2 {
@@ -402,28 +419,35 @@ main {
 }
 
 .pie-pagina {
-    background: #0a2a3a;
+    background: #0d3a4a;
     color: white;
-    padding: 50px 5%;
-    text-align: center;
+    padding: 60px 5%;
+    text-align: left;
+}
+
+.contenido-footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contenido-footer h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .contenido-footer p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 30px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #ccc;
 }
 
 .contenido-footer a {
-    color: #E42313;
+    color: #5dade2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .contenido-footer a:hover {
@@ -431,12 +455,18 @@ main {
 }
 
 .copyright {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #999;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #aaa;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
 }
 
 @media (max-width: 768px) {
+    .header-principal {
+        position: relative;
+    }
+
     .barra-superior,
     .barra-logo {
         flex-direction: column;
@@ -471,9 +501,16 @@ main {
     }
 
     main {
-        margin-top: 480px;
+        margin-top: 0;
     }
 
+    .contenido-inicio h2 {
+        font-size: 32px;
+    }
+
+    .contenido-inicio p {
+        font-size: 16px;
+    }
 
     .contenedor-servicios,
     .seccion-voluntariado {
@@ -510,6 +547,7 @@ main {
     .barra-superior,
     .barra-logo,
     .navegacion,
+    .seccion-inicio,
     .seccion-servicios,
     .seccion-institucion,
     .seccion-noticias,
